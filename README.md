@@ -1,4 +1,5 @@
 # DragNDropEx
+[![ElixirCI](https://github.com/paulo-silva/drag_n_drop_ex/actions/workflows/test.yml/badge.svg)](https://github.com/paulo-silva/drag_n_drop_ex/actions/workflows/test.yml)
 
 To start your Phoenix server:
 
