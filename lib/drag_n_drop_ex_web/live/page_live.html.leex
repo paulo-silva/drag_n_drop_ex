@@ -1,0 +1,17 @@
+<div class="w-full h-full flex bg-gray-50 overflow-y-auto border-t border-gray-200 sm:text-sm px-6 pt-6" phx-hook="Drag" id="Drag" class="flex">
+  <%= live_component(@socket, DropZone,
+    drop_zone_id: "drop_zone_a",
+    title: gettext("Dropzone A"),
+    draggables: @drop_zone_a,
+    highlight: @highlight_dropzone == "drop_zone_a") do %>
+    <span class="w-full p-4 text-gray-800 p-4 bg-white rounded-md mr-4 flex items-center"><%= @draggable %></span>
+  <% end %>
+
+  <%= live_component(@socket, DropZone,
+    drop_zone_id: "drop_zone_b",
+    title: gettext("DropZone B"),
+    draggables: @drop_zone_b,
+    highlight: @highlight_dropzone == "drop_zone_b") do %>
+    <span class="w-full p-4 text-gray-800 p-4 bg-white rounded-md mr-4 flex items-center"><%= @draggable %></span>
+  <% end %>
+</div>
